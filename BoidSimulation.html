@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Boid evolution</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+        <script src="BoidEvolutionBoid.js"></script>
+        <script src="BoidEvolutionQuadtree.js"></script>
+        <script src="BoidEvolutionSketch.js"></script>
+        <script src="canvasjs.min.js"></script>
+        <style>
+        @import "neat";
+        @import "bourbon";
+        * {
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1 1 auto;
+        }
+    </style>
+    </head>
+    <body style="background-color: #000; margin-left: calc(100vw - 100%);
+        overflow: hidden;">
+        <div class="flex-container" style="margin: auto;">
+            <div class="flex-item flex-item-1" id="rankChart" style="height: 200px;"></div>
+            <div class="flex-item flex-item-2" id="speedChart" style="height: 200px;"></div>
+            <div class="flex-item flex-item-4" id="sensorChart" style="height: 200px;"></div>
+            <div class="flex-item flex-item-3" id="sizeChart" style="height: 200px;"></div>
+        </div>
+    </body>
+</html>
